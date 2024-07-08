@@ -54,7 +54,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <description>
       # PicGuard
 
-      [![Publish](https://github.com/picguard/picguard/actions/workflows/publish.yml/badge.svg)](https://github.com/picguard/picguard/actions/workflows/publish.yml)[![Chocolatey Version](https://img.shields.io/chocolatey/v/picguard)](https://community.chocolatey.org/packages/picguard)[![GitHub License](https://img.shields.io/github/license/picguard/picguard)](https://github.com/picguard/picguard/blob/main/LICENSE)
+      [![Publish](https://github.com/picguard/choco-picguard/actions/workflows/publish.yml/badge.svg)](https://github.com/picguard/choco-picguard/actions/workflows/publish.yml)[![Chocolatey Version](https://img.shields.io/chocolatey/v/picguard)](https://community.chocolatey.org/packages/picguard)[![GitHub License](https://img.shields.io/github/license/picguard/picguard)](https://github.com/picguard/picguard/blob/main/LICENSE)
     
       > Your pictures, your signature.
     </description>
