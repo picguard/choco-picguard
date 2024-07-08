@@ -23,7 +23,7 @@ jobs:
         shell: pwsh
         run: |
           # Read the contents of a .nuspec file
-          $xmlContent = Get-Content -Path faforever.nuspec -Raw
+          $xmlContent = Get-Content -Path picguard.nuspec -Raw
 
           # Parsing XML content
           [xml]$xml = $xmlContent
@@ -34,7 +34,7 @@ jobs:
           # Output version number
           Write-Output "Package version: $version"
 
-          $packageFile = "faforever.$version.nupkg"
+          $packageFile = "picguard.$version.nupkg"
 
           if (test-path -Path "$packageFile") {
             choco push "$packageFile" --api-key "$env:API_KEY" --source https://push.chocolatey.org/
