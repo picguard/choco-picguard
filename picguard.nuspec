@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>1.0.0-rc332</version>
+    <version>1.0.0-rc398</version>
     <packageSourceUrl>https://github.com/picguard/choco-picguard</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>kjxbyz</owners>
@@ -56,7 +56,13 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
       [![Publish](https://github.com/picguard/choco-picguard/actions/workflows/publish.yml/badge.svg)](https://github.com/picguard/choco-picguard/actions/workflows/publish.yml)[![Chocolatey Version](https://img.shields.io/chocolatey/v/picguard)](https://community.chocolatey.org/packages/picguard)[![GitHub License](https://img.shields.io/github/license/picguard/picguard)](https://github.com/picguard/picguard/blob/main/LICENSE)
     
-      > Your pictures, your signature.
+      1. Introducing PicGuard - the ultimate solution for securing and customizing your digital photos. With our app, you can easily add watermarks to your images to protect your creative work and maintain your privacy.
+      
+      2. PicGuard offers robust privacy protection features, ensuring your personal and sensitive information remains safeguarded. It's highly customizable, allowing you to personalize watermarks with various fonts, styles, and designs to suit your needs.
+      
+      3. Accessible on web, mobile, and desktop, you can seamlessly integrate and manage your watermarking tasks across all your devices. PicGuard, as an open-source tool, it's not only free but also continuously improved by a community of developers dedicated to providing the best user experience.
+      
+      4. Download PicGuard today and take control of your photo security and personalization like never before!
     </description>
     <releaseNotes>
       [CHANGELOG](https://github.com/picguard/picguard/blob/main/CHANGELOG.md)

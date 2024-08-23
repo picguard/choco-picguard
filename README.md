@@ -7,11 +7,11 @@
 
 ```powershell
 # Run as administrator
-choco install picguard --version="1.0.0-rc332" --prerelease --source .
+choco install picguard --version="1.0.0-rc398" --prerelease --source .
 ```
 
 ```powershell
 choco apikey --api-key [API_KEY_HERE] -source https://push.chocolatey.org/
 
-choco push picguard.1.0.0-rc332.nupkg --source https://push.chocolatey.org/
+choco push picguard.1.0.0-rc398.nupkg --source https://push.chocolatey.org/
 ```
