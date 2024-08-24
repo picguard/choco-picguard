@@ -54,7 +54,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <description>
       # PicGuard
 
-      [![Publish](https://github.com/picguard/choco-picguard/actions/workflows/publish.yml/badge.svg)](https://github.com/picguard/choco-picguard/actions/workflows/publish.yml)[![Chocolatey Version](https://img.shields.io/chocolatey/v/picguard)](https://community.chocolatey.org/packages/picguard)[![GitHub License](https://img.shields.io/github/license/picguard/picguard)](https://github.com/picguard/picguard/blob/main/LICENSE)
+      [![Auto update](https://github.com/picguard/choco-picguard/actions/workflows/autoupdate_all.yml/badge.svg)](https://github.com/picguard/choco-picguard/actions/workflows/autoupdate_all.yml)
     
       1. Introducing PicGuard - the ultimate solution for securing and customizing your digital photos. With our app, you can easily add watermarks to your images to protect your creative work and maintain your privacy.
       
@@ -64,7 +64,9 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
       
       4. Download PicGuard today and take control of your photo security and personalization like never before!
     </description>
-    <releaseNotes>https://github.com/picguard/picguard/releases/tag/v1.0.0%2B399</releaseNotes>
+    <releaseNotes>
+      [CHANGELOG](https://github.com/picguard/picguard/blob/main/CHANGELOG.md)
+    </releaseNotes>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->

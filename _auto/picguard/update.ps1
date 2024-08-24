@@ -26,9 +26,9 @@ function global:au_SearchReplace {
             "(?i)(^\s*checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
         }
 
-        "picguard.nuspec" = @{
-            "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`$1$($Latest.ReleaseNotes)`$2"
-        }
+#        "picguard.nuspec" = @{
+#            "(\<releaseNotes\>).*?(\</releaseNotes\>)" = "`$1$($Latest.ReleaseNotes)`$2"
+#        }
     }
 }
 
