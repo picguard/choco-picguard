@@ -2,7 +2,7 @@ Import-Module Chocolatey-AU
 
 function global:au_GetLatest {
     $LatestRelease = Invoke-RestMethod -UseBasicParsing -Uri "https://api.github.com/repos/picguard/picguard/releases/latest"
-    $LatestVersion = $LatestRelease.tag_name.Replace('v', '').Replace('+', '-rc')
+    $LatestVersion = $LatestRelease.tag_name.Replace('v', '').Replace('+', '.')
     $LatestURL64 = ($LatestRelease.assets | Where-Object {$_.name.EndsWith("_windows_x64.exe")}).browser_download_url
 
     if (!$LatestURL64) {
