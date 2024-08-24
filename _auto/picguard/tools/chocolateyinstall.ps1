@@ -1,4 +1,4 @@
-
+﻿
 $ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url64      = 'https://github.com/picguard/picguard/releases/download/v1.0.0%2B398/picguard_1.0.0+398_windows_x64.exe'
