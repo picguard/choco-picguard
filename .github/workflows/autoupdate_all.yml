@@ -2,7 +2,7 @@ name: Choco Auto Update
 
 on:
   schedule:
-    - cron:  '0 */5 * * *'
+    - cron:  '0 9 * * 1'
   workflow_dispatch:
 
 defaults:
