@@ -28,7 +28,7 @@ function global:au_SearchReplace {
             "(?i)(^\s*checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
         }
 
-        ".\tools\VERIFICATION.txt" = @{
+        ".\legal\VERIFICATION.txt" = @{
             "(?i)(^\s*location on\:?\s*)\<.*\>" = "`${1}<$releases>"
             "(?i)(\s*64\-Bit Software.*)\<.*\>" = "`${1}<$($Latest.URL64)>"
             "(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType64)"
