@@ -1,5 +1,7 @@
 Import-Module Chocolatey-AU
 
+$releases = 'https://github.com/picguard/picguard/releases'
+
 function global:au_GetLatest {
     $LatestRelease = Invoke-RestMethod -UseBasicParsing -Uri "https://api.github.com/repos/picguard/picguard/releases/latest"
     $LatestVersion = $LatestRelease.tag_name.Replace('v', '').Replace('+', '.')
@@ -24,6 +26,13 @@ function global:au_SearchReplace {
             "(?i)(^\s*(\$)url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
             "(?i)(^\s*checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
             "(?i)(^\s*checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
+        }
+
+        ".\tools\VERIFICATION.txt" = @{
+            "(?i)(^\s*location on\:?\s*)\<.*\>" = "`${1}<$releases>"
+            "(?i)(\s*64\-Bit Software.*)\<.*\>" = "`${1}<$($Latest.URL64)>"
+            "(?i)(^\s*checksum\s*type\:).*"     = "`${1} $($Latest.ChecksumType64)"
+            "(?i)(^\s*checksum64\:).*"          = "`${1} $($Latest.Checksum64?.ToUpper())"
         }
 
 #        "picguard.nuspec" = @{
