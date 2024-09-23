@@ -1,6 +1,5 @@
 ﻿
 $ErrorActionPreference = 'Stop'
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url64      = 'https://github.com/picguard/picguard/releases/download/v1.0.2%2B409/picguard_1.0.2%2B409_windows_x64.exe'
 
 $arch = [System.Environment]::Is64BitOperatingSystem
@@ -12,7 +11,6 @@ if (-not $arch) {
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
   fileType      = 'exe'
   url64bit      = $url64
 
