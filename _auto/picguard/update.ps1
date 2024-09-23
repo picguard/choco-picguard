@@ -1,7 +1,13 @@
 Import-Module Chocolatey-AU
 
+# add headers
+$headers = @{
+    "Authorization" = "Bearer $Env:PG_RELEASE_TOKEN"
+    "Content-Type"  = "application/json"
+}
+
 function global:au_GetLatest {
-    $LatestRelease = Invoke-RestMethod -UseBasicParsing -Uri "https://api.github.com/repos/picguard/picguard/releases/latest"
+    $LatestRelease = Invoke-RestMethod -UseBasicParsing -Uri "https://api.github.com/repos/picguard/picguard/releases/latest" -Headers $headers
     $LatestVersion = $LatestRelease.tag_name.Replace('v', '').Replace('+', '.')
     $LatestURL64 = ($LatestRelease.assets | Where-Object {$_.name.EndsWith("_windows_x64.exe")}).browser_download_url
 
